@@ -1,0 +1,25 @@
+h1 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    /* text-shadow: 5px 4px 5px rgba(250, 249, 249, 0.25); */
+    /* text-shadow: 4px 4px 4px rgba(150, 236, 255, 0.25); */
+    /* text-shadow: 10px 4px 4px rgba(150, 236, 255, 0.25); */
+    text-shadow: 10px 4px 6px rgba(255, 255, 255, 0.147);
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+}
+.left{
+    width: 50%;
+}
+.right {
+    width: 50%;
+}

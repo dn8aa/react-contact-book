@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: "Aclonica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./images/back.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: black;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+button {
+  font-family: "Aclonica", sans-serif;
+  cursor: pointer;
+}
