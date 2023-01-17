@@ -28,13 +28,13 @@ const Contacts = (props) => {
           <li className="contact" key={item.id}>
             <div>
               <h2>{item.name}</h2>
-              <h2>{item.surname}</h2>
+              <h2>{item.surnaame}</h2>
               <h3>{item.number}</h3>
             </div>
 
             <div className="btns">
               <button onClick={() => props.handleEdit(index)}>edit</button>
-              <button onClick={() => props.handleDelete(item.id)}>
+              <button onClick={() => props.handleDelete(item)}>
                 delete
               </button>
             </div>

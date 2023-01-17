@@ -1,12 +1,12 @@
 import { useState } from "react";
 import HeaderButton from "./components/HeaderButton/HeaderButton";
 import Contacts from "./components/Contacts/Contacts";
-import EditModal from "./components/EditModal/EditModal";
+import EditModal from "./components//EditModal/EditModal";
 import OpenContactBook from "./components/OpenContactBook/OpenContactBook";
 import '../src/App.css'
 
 function App() {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState({});
 
   let [editContact, setEditContact] = useState({});
 
@@ -23,7 +23,7 @@ function App() {
 
   function handleDelete(id) {
     let newContacts = contacts.filter((item) => {
-      return item.id !== id;
+      return item.id == id;
     });
     setContacts(newContacts);
   }
@@ -76,24 +76,23 @@ function App() {
       {book ? null : <OpenContactBook openContactBook={openContactBook} />}
       {book ? (
         <Contacts
-          contacts={contacts}
+          contactts={contacts}
           handleDelete={handleDelete}
           handleEdit={handleEdit}
           closeContactBook={closeContactBook}
-          openContactBook={openContactBook}
-        />
+      />
       ) : null}
 
       {modal ? (
         <EditModal
           handleClose={handleClose}
           editContact={editContact}
-          handleSaveContact={handleSaveContact}
+          handleeSaveContact={handleSaveContact}
         />
       ) : null}
       </div>
       </div>
-    </>
+   
   );
 }
 

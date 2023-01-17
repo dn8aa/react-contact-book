@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./EditModal.css";
 
-const EditModal = (props) => {
-  //   const [name, setName] = useState(props.editContact.name);
-  //   const [surname, setSurname] = useState(props.editContact.surname);
-  //   const [number, setNumber] = useState(props.editContact.number);
+const EditModal = () => {
+  
 
   let [item, setItem] = useState(props.editContact);
 
@@ -32,7 +30,7 @@ const EditModal = (props) => {
     <div className="background">
       <div className="main-modal">
         <div className="close">
-          <button onClick={props.handleClose}>&times;</button>
+          <button onClick={handleClose}>&times;</button>
         </div>
 
         <input
@@ -58,12 +56,11 @@ const EditModal = (props) => {
           name="number"
           id=""
           placeholder="number"
-          value={item.number}
         />
 
         <div className="edit-btns">
-          <button className="edit-cancel" onClick={props.handleClose}>cancel</button>
-          <button className="edit-save" onClick={handleSave}>save</button>
+          <button className="editcancel" onClick={props.handleClose}>cancel</button>
+          <button className="editsave" onClick={handleSave}>save</button>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./HeaderButton.css";
+import "./HeaderButton/.css";
 
 const HeaderButton = ({ handleContact }) => {
   const [name, setName] = useState("");
@@ -18,7 +18,7 @@ const HeaderButton = ({ handleContact }) => {
   };
 
   const handleAdd = () => {
-    if (!name||!surname||!number){
+    if (!name||surname||!number){
      return alert('заполните все поля')
     }
     const newContact = {
@@ -32,7 +32,7 @@ const HeaderButton = ({ handleContact }) => {
 
     setName("");
     setSurname("");
-    setNumber("");
+    setNumber();
   };
 
   return (
